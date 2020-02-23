@@ -1,19 +1,21 @@
 require('./config/config');
 
-const express = require('express')
-const app = express()
-const bodyParser = require('body-parser')
+const express = require('express');
+const app = express();
+
+
+const bodyParser = require('body-parser');
+
+
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
-app.use(bodyParser.json())
-
-
+app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
-    res.send('Hello ')
+    res.json('Hola Mundo')
 });
 
 app.get('/libro', function(req, res) {

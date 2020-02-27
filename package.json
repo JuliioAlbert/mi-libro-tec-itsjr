@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "cd server/node server.js",
+        "start": " cd server/ node server.js",
         "nodemon": "nodemon server.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -17,6 +17,8 @@
         "hbs": "^4.1.0",
         "mongoose": "^5.9.2",
         "mongoose-unique-validator": "^2.0.3",
-        "underscore": "^1.9.2"
+        "underscore": "^1.9.2",
+        "vue": "^2.6.11",
+        "vue-axios": "^2.1.5"
     }
 }

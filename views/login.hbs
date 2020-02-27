@@ -1,30 +1,26 @@
 {{> header}}
-<body>
-   
 
- <div class="wrapper fadeInDown">
+<body>
+
+
+    <div class="wrapper fadeInDown">
         <div id="formContent">
             <!-- Tabs Titles -->
-
-            <!-- Icon -->
-            <div class="fadeIn first">
-                <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
-            </div>
-
             <!-- Login Form -->
             <form>
                 <input type="text" id="login" class="fadeIn second" name="login" placeholder="No. Control">
                 <input type="text" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
                 <!--!<input type="submit" class="fadeIn fourth" value="Entrar">*/-->
-                <button type="button" class="btn btn-success">Entrar</button>
-                 {{!-- <button type="button" class="btn btn-warning">Registrarse</button> --}}
+               <input type="submit" class="fadeIn fourth" value="Enviar" >
+                {{!-- <button type="button" class="btn btn-warning">Registrarse</button> --}}
             </form>
-            <br>
-            <button type="button" class="btn btn-warning">Registrarse</button>
+            <div id="formFooter">
+                <a class="underlineHover" href="registro">A un no estas Registrado?</a>
+            </div>
         </div>
     </div>
- 
 
-   {{> footer }}
-   {{> scrip  }}
-   {{> fin    }}
+
+    {{> footer }}
+    {{> scrip  }}
+    {{> fin    }}

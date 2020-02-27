@@ -20,6 +20,14 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/registro', (req, res) => {
+    res.render('registro');
+});
+
+app.get('/home', (req, res) => {
+    res.render('home');
+});
+
 app.get('/about', (req, res) => {
     res.render('about');
 });

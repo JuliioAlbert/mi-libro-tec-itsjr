@@ -5,6 +5,13 @@ const Libro = require('../models/libro');
 const app = express();
 
 app.get('/libro', function(req, res) {
+
+    
+
+
+
+
+
     Libro.find({})
         .exec((err, libros) => {
             if (err) {

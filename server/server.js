@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
     res.json('Hola Mundo')
 });
 
-mongoose.connect('mongodb://localhost:27017/milibrotec', {
+mongoose.connect(process.env.URLDB, {
     useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true
 }, (err, resp) => {
     if (err) throw err;
